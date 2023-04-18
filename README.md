@@ -1,9 +1,12 @@
 # Budget App Project Backend
 
 ## Api calls
-### Get all budget items
-/budget
-```
+
+### Get all transactions
+
+/transactions
+
+```json
 {
   "success": true,
   "data": [
@@ -25,11 +28,13 @@
 }
 ```
 
-### Get one budget item
-/budget/:index
-<br>
-/budget/1
-```
+### Get one transaction
+
+/transactions/:index
+
+/transactions/1
+
+```json
 {
   "success": true,
   "data": {
