@@ -80,7 +80,7 @@ module.exports = [
   },
   {
     itemName: "Car Payment",
-    amount: 450,
+    amount: -450,
     date: "2023-03-31",
     from: "Bank",
     category: "Loan Payment"
