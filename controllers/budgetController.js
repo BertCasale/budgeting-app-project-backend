@@ -35,4 +35,16 @@ budget.put("/:index", (req,res) => {
   }
 });
 
+//DELETE
+budget.delete("/:index", (req, res) => {
+  const {index} = req.params;
+
+  if (budgetArray[index]) {
+    const deletedBudgetItem = budgetArray.splice(index, 1);
+    res.status(203).json({success: true, data: deletedBudgetItem});
+  } else {
+    res.status(404).json({succes: false, error: "The page you are looking for cannot be found or does not exist."});
+  }
+});
+
 module.exports = budget;
